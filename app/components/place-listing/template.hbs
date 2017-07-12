@@ -1,0 +1,15 @@
+<div class="vcard">
+  <h3 class="org">{{place.name}}</h3>
+  {{#if place.email}}
+    <a class="email" href="mailto:{{place.email}}">{{place.email}}</a>
+  {{/if}}
+  <div class="adr">
+    <div class="street-address">{{place.streeAddress}}</div>
+    <span class="locality">{{place.city}}</span>, 
+    <span class="region">{{place.state}}</span>, 
+    <span class="postal-code">{{place.zipCode}}</span>
+  </div>
+  <div class="tel">{{place.phoneNumber}}</div>
+</div>
+{{place.tweetIds.length}} tweets
+<hr/>
