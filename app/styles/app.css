@@ -1,0 +1,35 @@
+@import "pod-styles";
+
+body {
+  margin: 0;
+  background: rgba(240, 240, 240, 1);
+}
+
+.logo {
+  background: blue;
+  display: inline-block;
+  width: 60px;
+  height: 80px;
+  position: relative;
+  border-radius: 0 0 30px 30px;
+  background: linear-gradient(to bottom, #80eda6 0%, #0669d3 100%);
+  color: transparent;
+}
+
+.logo::before {
+  position: absolute;
+  bottom: 0;
+  content: '';
+  width: 60px;
+  height: 60px;
+  border: solid 20px white;
+  opacity: 1;
+  box-sizing: border-box;
+  display: block;
+  border-top: 0px;
+  border-radius: 0 0 30px 30px;
+}
+
+.search-form {
+  display: inline-block;
+}

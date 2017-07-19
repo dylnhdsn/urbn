@@ -26,10 +26,12 @@
     "ember-cli-htmlbars-inline-precompile": "^0.4.0",
     "ember-cli-inject-live-reload": "^1.4.1",
     "ember-cli-mirage": "^0.3.4",
+    "ember-cli-postcss": "^3.4.2",
     "ember-cli-qunit": "^4.0.0",
     "ember-cli-shims": "^1.1.0",
     "ember-cli-sri": "^2.1.0",
     "ember-cli-uglify": "^1.2.0",
+    "ember-component-css": "^0.3.4",
     "ember-data": "^2.14.4",
     "ember-export-application-global": "^2.0.0",
     "ember-load-initializers": "^1.0.0",
@@ -43,6 +45,7 @@
   },
   "private": true,
   "dependencies": {
-    "eslint-plugin-ember-suave": "^1.0.0"
+    "eslint-plugin-ember-suave": "^1.0.0",
+    "postcss-import": "^10.0.0"
   }
 }

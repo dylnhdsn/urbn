@@ -1,10 +1,19 @@
 /* eslint-env node */
 const EmberApp = require('ember-cli/lib/broccoli/ember-app');
+var CssImport = require('postcss-import');
 
 module.exports = function(defaults) {
   var app = new EmberApp(defaults, {
     'ember-cli-babel': {
       includePolyfill: true
+    },
+    postcssOptions: {
+      compile: {
+        enabled: true,
+        plugins: [{
+          module: CssImport,
+        }]
+      }
     }
   });
 
