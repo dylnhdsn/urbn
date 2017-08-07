@@ -33,3 +33,25 @@ body {
 .search-form {
   display: inline-block;
 }
+
+.search-form__input {
+  background: white;
+  border: none;
+  line-height: 30px;
+  font-size: 16px;
+  padding: 0 10px;
+  text-transform: lowercase;
+  color: rgba(150, 150, 150, 1);
+  margin: 0 5px;
+}
+
+.search-form__button {
+  background: transparent;
+  border: 2px solid rgba(255, 255, 255, 0.75);
+  line-height: 26px;
+  font-size: 16px;
+  padding: 0 10px;
+  box-sizing: border-box;
+  color: rgba(255, 255, 255, 0.75);
+  text-transform: uppercase;
+}
