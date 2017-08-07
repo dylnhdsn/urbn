@@ -1,9 +1,10 @@
-import { Factory, faker } from 'ember-cli-mirage';
+import { Factory, faker, trait } from 'ember-cli-mirage';
 
 const { 
   address: { streetAddress, city, stateAbbr, zipCode },
   company: { companyName },
-  phone: { phoneNumber }
+  phone: { phoneNumber },
+  random: { arrayElement }
 } = faker;
 
 export default Factory.extend({
@@ -33,5 +34,10 @@ export default Factory.extend({
       count -= 1;
     }
     return tweetIds;
-  }
+  },
+  randomCity: trait({
+    city() {
+      return arrayElement(['Hemet', 'San Diego', 'Redwood City']);
+    }
+  })
 });
