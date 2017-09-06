@@ -9,5 +9,5 @@ export default Model.extend({
   state: attr('string'),
   zipCode: attr('string'),
   phoneNumber: attr('string'),
-  tweetIds: attr(),
+  upvotes: attr('number'),
 });

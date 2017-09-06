@@ -1,9 +1,9 @@
 <nav class="{{componentCssClassName}}__nav">
   <h1 class="logo">Urbn Trending</h1>
   <form class="search-form">
-    <input class="search-form__category" type="text" placeholder="Category"/>
-    <input class="search-form__location" type="text" placeholder="Location"/>
-    <input class="search-form__distance" type="text" placeholder="Distance"/>
-    <button class="search-form__button" type="submit">Go</button>
+    {{input class="search-form__category" placeholder="Category" value=category}}
+    {{input class="search-form__location" placeholder="Location" value=location}}
+    {{input class="search-form__distance" placeholder="Distance" value=radius}}
+    <button class="search-form__button" type="submit" {{action 'search'}}>Go</button>
   </form>
 </nav>
